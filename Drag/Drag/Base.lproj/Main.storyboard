@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.17" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
@@ -18,6 +18,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="qCU-tC-nHz">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="拖动第二个滑块，使其接近第一个滑块的百分比位置" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ufg-zw-U0H">
                                 <rect key="frame" x="35" y="45" width="498" height="35"/>
                                 <constraints>
@@ -42,7 +45,7 @@
                                     <constraint firstAttribute="width" constant="60" id="QdN-F6-BRB"/>
                                     <constraint firstAttribute="height" constant="30" id="xNm-tF-bse"/>
                                 </constraints>
-                                <state key="normal" title="点击"/>
+                                <state key="normal" title="点 击" backgroundImage="Button-Normal"/>
                                 <connections>
                                     <action selector="clickAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="col-Ao-YlN"/>
                                 </connections>
@@ -54,7 +57,7 @@
                                     <constraint firstAttribute="width" constant="110" id="set-Tm-hd9"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="从头再来">
+                                <state key="normal" title="从头再来" backgroundImage="Button-Normal">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -88,7 +91,7 @@
                                     <constraint firstAttribute="width" secondItem="nc1-aG-nQE" secondAttribute="height" multiplier="1:1" id="bZz-20-l4O"/>
                                 </constraints>
                                 <connections>
-                                    <action selector="roleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tlu-B7-eAJ"/>
+                                    <action selector="ruleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bsr-SH-qWq"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -103,20 +106,27 @@
                             <constraint firstItem="DY6-91-R0G" firstAttribute="leading" secondItem="Ufg-zw-U0H" secondAttribute="leading" id="DK6-Nk-75U"/>
                             <constraint firstItem="Fon-jk-XQW" firstAttribute="centerY" secondItem="Uu5-HV-bD9" secondAttribute="centerY" id="Fub-8Q-Uqc"/>
                             <constraint firstItem="Fon-jk-XQW" firstAttribute="leading" secondItem="Uu5-HV-bD9" secondAttribute="trailing" constant="40" id="IDc-NX-jYu"/>
+                            <constraint firstAttribute="trailing" secondItem="qCU-tC-nHz" secondAttribute="trailing" id="Kbp-NE-DsO"/>
                             <constraint firstItem="DY6-91-R0G" firstAttribute="top" secondItem="Ufg-zw-U0H" secondAttribute="bottom" constant="30" id="PSj-sW-keL"/>
                             <constraint firstItem="nc1-aG-nQE" firstAttribute="centerX" secondItem="Fon-jk-XQW" secondAttribute="centerX" id="R6L-59-iFZ"/>
                             <constraint firstItem="Mxo-wB-eBX" firstAttribute="centerY" secondItem="9jz-SQ-xUc" secondAttribute="centerY" id="S9K-NZ-Sua"/>
                             <constraint firstItem="DY6-91-R0G" firstAttribute="width" secondItem="Ufg-zw-U0H" secondAttribute="width" id="Sce-Vh-A9e"/>
+                            <constraint firstItem="qCU-tC-nHz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ugj-Cu-VSo"/>
                             <constraint firstItem="9jz-SQ-xUc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="35" id="cSH-gy-NcJ"/>
                             <constraint firstItem="Ufg-zw-U0H" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-98" id="cey-V7-n56"/>
                             <constraint firstItem="nc1-aG-nQE" firstAttribute="centerY" secondItem="uyt-rv-Mx0" secondAttribute="centerY" id="jJ1-gg-iKu"/>
                             <constraint firstItem="Uu5-HV-bD9" firstAttribute="top" secondItem="DY6-91-R0G" secondAttribute="bottom" constant="30" id="jec-ld-t4Y"/>
                             <constraint firstItem="uyt-rv-Mx0" firstAttribute="leading" secondItem="Mxo-wB-eBX" secondAttribute="trailing" constant="36" id="kWW-PH-8Pr"/>
                             <constraint firstItem="uyt-rv-Mx0" firstAttribute="centerY" secondItem="Mxo-wB-eBX" secondAttribute="centerY" id="lV8-rL-oef"/>
+                            <constraint firstItem="qCU-tC-nHz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="pRC-0I-6hS"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qCU-tC-nHz" secondAttribute="bottom" id="rXC-zb-SbO"/>
                         </constraints>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
+                        <outlet property="clickBtn" destination="Fon-jk-XQW" id="9dN-UO-DUB"/>
+                        <outlet property="mSlider" destination="Uu5-HV-bD9" id="q7f-sK-N7Q"/>
+                        <outlet property="restartBtn" destination="9jz-SQ-xUc" id="6Cq-VY-Re6"/>
                         <outlet property="roundLabel" destination="uyt-rv-Mx0" id="6Xe-ki-ra4"/>
                         <outlet property="scoreLabel" destination="Mxo-wB-eBX" id="0qi-ld-iiY"/>
                         <outlet property="tSlider" destination="DY6-91-R0G" id="J4K-s4-CR7"/>
@@ -124,7 +134,16 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-135" y="275"/>
+            <point key="canvasLocation" x="159" y="365"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Background" width="480" height="320"/>
+        <image name="Button-Normal" width="100" height="37"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>
